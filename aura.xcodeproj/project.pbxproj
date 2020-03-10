@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		E576169F2415F4A800E2551F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576169E2415F4A800E2551F /* AppDelegate.swift */; };
 		E57616A12415F4A800E2551F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616A02415F4A800E2551F /* SceneDelegate.swift */; };
-		E57616A32415F4A800E2551F /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616A22415F4A800E2551F /* TimeView.swift */; };
+		E57616A32415F4A800E2551F /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616A22415F4A800E2551F /* AlarmView.swift */; };
 		E57616A52415F4AB00E2551F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57616A42415F4AB00E2551F /* Assets.xcassets */; };
 		E57616A82415F4AB00E2551F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57616A72415F4AB00E2551F /* Preview Assets.xcassets */; };
 		E57616AB2415F4AB00E2551F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57616A92415F4AB00E2551F /* LaunchScreen.storyboard */; };
 		E57616B62415F4AB00E2551F /* auraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616B52415F4AB00E2551F /* auraTests.swift */; };
 		E57616C12415F4AB00E2551F /* auraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616C02415F4AB00E2551F /* auraUITests.swift */; };
-		E57616D72417006900E2551F /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616D62417006900E2551F /* Time.swift */; };
+		E57616D72417006900E2551F /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616D62417006900E2551F /* Alarm.swift */; };
+		E57616D92417093900E2551F /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616D82417093900E2551F /* AlarmList.swift */; };
+		E57616DB24170CE700E2551F /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57616DA24170CE700E2551F /* AlarmListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		E576169B2415F4A800E2551F /* aura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E576169E2415F4A800E2551F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E57616A02415F4A800E2551F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E57616A22415F4A800E2551F /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		E57616A22415F4A800E2551F /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		E57616A42415F4AB00E2551F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E57616A72415F4AB00E2551F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E57616AA2415F4AB00E2551F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +52,9 @@
 		E57616BC2415F4AB00E2551F /* auraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = auraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57616C02415F4AB00E2551F /* auraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auraUITests.swift; sourceTree = "<group>"; };
 		E57616C22415F4AB00E2551F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E57616D62417006900E2551F /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		E57616D62417006900E2551F /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		E57616D82417093900E2551F /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
+		E57616DA24170CE700E2551F /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 			children = (
 				E576169E2415F4A800E2551F /* AppDelegate.swift */,
 				E57616A02415F4A800E2551F /* SceneDelegate.swift */,
-				E57616A22415F4A800E2551F /* TimeView.swift */,
-				E57616D62417006900E2551F /* Time.swift */,
+				E57616A22415F4A800E2551F /* AlarmView.swift */,
+				E57616D82417093900E2551F /* AlarmList.swift */,
+				E57616DA24170CE700E2551F /* AlarmListView.swift */,
+				E57616D62417006900E2551F /* Alarm.swift */,
 				E57616A42415F4AB00E2551F /* Assets.xcassets */,
 				E57616A92415F4AB00E2551F /* LaunchScreen.storyboard */,
 				E57616AC2415F4AB00E2551F /* Info.plist */,
@@ -270,10 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57616D72417006900E2551F /* Time.swift in Sources */,
+				E57616D72417006900E2551F /* Alarm.swift in Sources */,
 				E576169F2415F4A800E2551F /* AppDelegate.swift in Sources */,
 				E57616A12415F4A800E2551F /* SceneDelegate.swift in Sources */,
-				E57616A32415F4A800E2551F /* TimeView.swift in Sources */,
+				E57616DB24170CE700E2551F /* AlarmListView.swift in Sources */,
+				E57616D92417093900E2551F /* AlarmList.swift in Sources */,
+				E57616A32415F4A800E2551F /* AlarmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,13 @@
 
 import SwiftUI
 
-struct TimeView: View {
-    @ObservedObject var time: Time
+struct AlarmView: View {
+    @ObservedObject var alarm: Alarm
     
     var body: some View {
         VStack {
-            Toggle(isOn: $time.isOn) {
-                Text(String(format: "%02d:%02d", time.hour, time.minute))
+            Toggle(isOn: $alarm.isOn) {
+                Text(String(format: "%02d:%02d", alarm.hour, alarm.minute))
                     .bold()
                     .font(.largeTitle)
             }
@@ -24,12 +24,12 @@ struct TimeView: View {
     }
 }
 
-struct TimeView_Previews: PreviewProvider {
+struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        let time = Time()
-        time.hour = 22
+        let alarm = Alarm()
+        alarm.hour = 22
         
-        return TimeView(time: time)
+        return AlarmView(alarm: alarm)
     }
 }
 

@@ -9,13 +9,12 @@
 import Foundation
 import Combine
 
-class Time: ObservableObject, Identifiable {
+class Alarm: ObservableObject, Identifiable {
     var hour = 0
     var minute = 0
     var isOn = false {
         didSet {
             print("\(hour):\(minute) is \(isOn)")
-            
         }
     }
 }
