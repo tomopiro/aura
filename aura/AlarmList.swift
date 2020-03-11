@@ -23,4 +23,15 @@ class AlarmListViewModel: ObservableObject {
         }
         return alarmList
     }
+    
+    init() {
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                print("許可されました。")
+            } else {
+                print("許可されませんでした。")
+            }
+        }
+    }
 }
